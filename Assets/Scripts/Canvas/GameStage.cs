@@ -67,7 +67,6 @@ public class GameStage : MonoBehaviour
                     PlayerPrefs.SetInt("Level", PlayerPrefs.GetInt("Level") + 1);
 
                     IsGameFlowe = false;
-
                 }
                 break;
 
@@ -77,14 +76,9 @@ public class GameStage : MonoBehaviour
                     _canvasManager.GameStageWindow(StageGame);
 
                     IsGameFlowe = false;
-
                 }
                 break;
         }
 
-    }
-    public void LevelStart()
-    {
-        ChangeStage(Stage.StartLevel);
     }
 }

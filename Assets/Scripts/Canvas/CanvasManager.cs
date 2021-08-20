@@ -63,7 +63,6 @@ public class CanvasManager : MonoBehaviour
 
                 _inGameUI.SetActive(false);
                 _wimIU.SetActive(true);
-                //впиши сюда поднятие уровня и сцены 
                 break;
 
             case Stage.LostGame:
@@ -74,8 +73,7 @@ public class CanvasManager : MonoBehaviour
     }
     public void CrystalCollector(int namber)
     {
-        PlayerPrefs.SetInt("Crystal", PlayerPrefs.GetInt("Crystal") + 1);
+        PlayerPrefs.SetInt("Crystal", PlayerPrefs.GetInt("Crystal") + namber);
         _crystalCounter.text = PlayerPrefs.GetInt("Crystal").ToString();
     }
-
 }
